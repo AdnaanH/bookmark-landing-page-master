@@ -230,6 +230,9 @@ span.feat-active{
     justify-content: space-between;
     align-items: center;
 }
+.f-1,.f-2{
+    display: none;
+}
 .feature-image{
     width: 50%;
 }
@@ -255,9 +258,6 @@ span.feat-active{
     height: 350px;
     background-color: var(--Soft-Blue);
     border-radius: 0 50% 50% 0;
-}
-.f-1,.f-2{
-    display: none;
 }
 .extensions{
     margin: 2em 0;
@@ -527,7 +527,7 @@ footer{
         padding: 0;
     }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
     h2{
         font-size: 24px;
     }
