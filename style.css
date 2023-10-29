@@ -679,6 +679,9 @@ footer{
         margin: 3em 0;
         padding: 0;
     }
+    .feature-text button{
+        width: 50%;
+    }
     .feature-text h2{
         text-align: center;
     }
