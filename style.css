@@ -647,6 +647,11 @@ footer{
         width: 100%;
         font-size: 15px;
     }
+    .features-section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
     .feature-header{
         flex-direction: column;
         width: 100%;
