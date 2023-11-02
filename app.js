@@ -59,3 +59,26 @@ faqElements.forEach((faq) => {
     }
   });
 });
+
+const form = document.getElementById("form");
+        const emailInput = document.getElementById("email-subscribe");
+        const errorEmail = document.getElementById("error-email");
+
+        function validateEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault(); 
+            const email = emailInput.value;
+
+            if (validateEmail(email)) {
+                errorEmail.style.display = "none";
+                console.log("Form submitted");
+            } else {
+                errorEmail.style.display = "block";
+            }
+        }
+
+        form.addEventListener("submit", handleSubmit);
